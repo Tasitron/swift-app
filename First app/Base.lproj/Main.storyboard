@@ -29,16 +29,38 @@
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n22-eM-Vwm"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHd-Ns-5Yo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uhZ-sh-reG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qh2-gT-SO5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UDA-Hp-jva"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nu3-Iy-cjQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0qH-Kg-yzl"/>
                             <constraint firstItem="m1P-4T-0G1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gZ-jP-Leh"/>
                             <constraint firstItem="m1P-4T-0G1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5W2-Y2-VTw"/>
+                            <constraint firstItem="iHd-Ns-5Yo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQa-Yf-6Fg"/>
+                            <constraint firstItem="qh2-gT-SO5" firstAttribute="top" secondItem="nu3-Iy-cjQ" secondAttribute="bottom" constant="10" id="o1L-pa-tim"/>
+                            <constraint firstItem="iHd-Ns-5Yo" firstAttribute="top" secondItem="qh2-gT-SO5" secondAttribute="bottom" constant="15" id="tbi-WJ-mmx"/>
+                            <constraint firstItem="qh2-gT-SO5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uBw-UU-eZX"/>
                             <constraint firstItem="nu3-Iy-cjQ" firstAttribute="top" secondItem="m1P-4T-0G1" secondAttribute="bottom" constant="15" id="yFe-FZ-4zz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="qh2-gT-SO5" id="MmM-36-6Ws"/>
+                        <outlet property="text2" destination="iHd-Ns-5Yo" id="RbL-fu-JYX"/>
                         <outlet property="theLabel" destination="m1P-4T-0G1" id="tTa-NC-497"/>
                     </connections>
                 </viewController>
