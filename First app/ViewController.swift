@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var tapCount = 0
     @IBAction func buttonClicked(_ sender: AnyObject) {
         tapCount = tapCount + 1
-        if tapCount >= 10 {
+        if tapCount > 9 {
             theLabel.text = "You've pressed the button 10 times"
         }
     }
