@@ -15,19 +15,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonClicked(_ sender: AnyObject) {
-        theLabel.text = "Answer: \(Double(text1.text!)! + Double(text1.text!)!)"
+        let addition :Bool = true
+        if addition {
+            theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        }else {
+            theLabel.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
         }
     }
-    
+}
 
-    func viewDidLoad() {
-        viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    func didReceiveMemoryWarning() {
-        didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+func viewDidLoad() {
+    viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+func didReceiveMemoryWarning() {
+    didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+}
 
 
